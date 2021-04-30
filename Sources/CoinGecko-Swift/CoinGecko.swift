@@ -15,8 +15,8 @@ public class CoinGecko {
     
     // MARK: - Calls
     
-    /// Returns all account information associated with the account of provided pubkey.
-    /// https://docs.solana.com/developing/clients/jsonrpc-api#getaccountinfo
+    /// Check API server status.
+    /// https://www.coingecko.com/api/documentations/v3#/ping
     public func ping(completion: @escaping (Result<Networking.Response<PingResponse>, APIError>) -> Void) {
 
         var request = URLRequest(url: baseURL.appendingPathComponent("/ping"))
